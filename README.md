@@ -23,11 +23,13 @@ The model requires specify the next directories:
 
 The model uses the next parameters:
 
-* n : the size of n-phones. Default is 3
-* iter : number of iterations to train the neural network. Default is 50
-* subsample_siz : Number of examples for epoch in SGD. Default is 100
-* emb_dim : Number of dimensions in embedding vectors. Default is 300
-* hid_dim : Number of dimensions in hidden layer. Default is 100
+* For the n-phone extractor:
+** n : the size of n-phones. Default is 3
+* For the neural probabilistic language model:
+** iter : number of iterations to train the neural network. Default is 50
+** subsample_siz : Number of examples for epoch in SGD. Default is 100
+** emb_dim : Number of dimensions in embedding vectors. Default is 300
+** hid_dim : Number of dimensions in hidden layer. Default is 100
 
 To run the model with different parameters, execute the program like the next example:<br/>
 
