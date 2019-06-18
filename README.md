@@ -14,14 +14,14 @@ To run the model, execute the following command:<br/>
 	``python3 main.py --input corpora --output results/results.csv``
 
 ### Input/Output directories
-The model requires specify the next directories:
+The model requires the following directories to be specified:
 
 * input : input directory of data. Default is corpora.
 * output : output directory. Default is results/results.csv
 
 ### Parameters
 
-The model uses the next parameters:
+The model uses the following parameters:
 
 ##### For the n-phone extractor:
 
@@ -34,6 +34,6 @@ The model uses the next parameters:
 * emb_dim : Number of dimensions in embedding vectors. Default is 300
 * hid_dim : Number of dimensions in hidden layer. Default is 100
 
-To run the model with different parameters, execute the program like the next example:<br/>
+To run the model with different parameters, execute the program as in the following example:<br/>
 
 	``python3 main.py --input corpora --output results/results.csv --n 1 --iter 100``
