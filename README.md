@@ -23,11 +23,11 @@ The model requires specify the next directories:
 
 The model uses the next parameters:
 
-**For the n-phone extractor:
+##### For the n-phone extractor:
 
 * n : the size of n-phones. Default is 3
 
-**For the neural probabilistic language model:
+##### For the neural probabilistic language model:
 
 * iter : number of iterations to train the neural network. Default is 50
 * subsample_siz : Number of examples for epoch in SGD. Default is 100
