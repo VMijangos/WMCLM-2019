@@ -41,7 +41,7 @@ def main(args):
 	
 	#Open output file
 	f = open(args.output, 'w')
-	print('file\tENT', file=f)
+	print('file\tH-%dgram\tTTR'% (args.n,), file=f)
 
 	for name in all_files: 
 		#Name of file
@@ -80,10 +80,14 @@ def main(args):
 		#\sum_i mu_i \sum_j p_ij*logN p_ij
 		Entropy = -np.dot(mu/mu.sum(0),H)
 		Entropy_norm = -np.dot(mu/mu.sum(0),Hnorm)
+
+		#compute TTR
+		ttr = len(set(phones.file))/len(phones.file)
 		
 		#print data
-		print(name,'\t',Entropy_norm, file=f)	
+		print(name,'\t',Entropy_norm,'\t', ttr, file=f)	
 		print('Corpus:',name)
+		print('\tTTR', ttr)
 		print('\tEntropy:', Entropy)
 		print('\tNomralized entropy:', Entropy_norm)
 
